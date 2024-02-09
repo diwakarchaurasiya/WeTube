@@ -1,0 +1,9 @@
+color:-
+
+text - #e8faef
+bg- #05150c
+accent - #45b4d4
+primary - #88e3a7
+
+
+logo - https://www.youtube.com/s/desktop/d133835b/img/favicon_32x32.png
