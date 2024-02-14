@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import {VideoFeed,VideoPlayerPage,ChannelDets,WeTube,SearchFeed, InvalidUrl, Navbar} from './index.js'
+import {VideoFeed,VideoPlayerPage,ChannelDets,Home,SearchFeed, InvalidUrl, Navbar} from './index.js'
 function App() {
 
   return (
@@ -8,7 +8,7 @@ function App() {
       <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route path='/' element={<WeTube/>} />
+          <Route path='/' element={<Home/>} />
           <Route path='/video/:videoId' element={<VideoPlayerPage/>}/>
           <Route path='/channel/:channelId' element={<ChannelDets/>} />
           <Route path='/search/:query'  element={<SearchFeed/>} />
