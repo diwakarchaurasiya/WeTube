@@ -5,7 +5,7 @@ import { demoThumbnailUrl, demoChannelUrl, demoVideoUrl, demoChannelTitle, demoV
 const PlaylistCard = ({ playInfo:{id:{playlistId},snippet} }) => {
   return (
       <>
-          <Card sx={{ width: { md: "358px", xs: '100%' }, boxShadow: 0, border: 'none', background: '#1e1e1e'}}>
+          <Card sx={{ width: { md: "358px", xs: '100%' }, boxShadow: 0, border: 'none', background: '#fff'}}>
             
                   <CardMedia
                       image={snippet?.thumbnails?.high?.url||demoThumbnailUrl}
@@ -14,10 +14,10 @@ const PlaylistCard = ({ playInfo:{id:{playlistId},snippet} }) => {
                   /> 
               <CardContent 
                       sx={{ width: 'auto', height: { md: "5rem", xs: "auto" }, border: 'none', }}>
-                      <Typography variant='subtitle1'  sx={{textAlign:'center',fontWeight:'bold',color:'#fff' ,bgcolor:'#FC1503',borderRadius:'1rem'}}>
+                      <Typography variant='subtitle1'  sx={{textAlign:'center',fontWeight:'bold',color:'#e0e0e0' ,bgcolor:'#FC1503',borderRadius:'1rem'}}>
                              PLAYLIST
                           </Typography>
-                          <Typography variant='subtitle1' fontWeight='bold'color='#fff'>
+                          <Typography variant='subtitle1' color='#0e0e0e'>
                               {(snippet?.title + '|| Diwakar chaurasiya || Fullstack MERN developer').slice(0,60)+' :-'|| demoVideoTitle.slice(0,60)}
                           </Typography>
                       </CardContent>

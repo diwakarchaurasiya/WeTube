@@ -4,7 +4,7 @@ import {Stack,Box} from '@mui/material'
 const SideBar = ({selectedCategory,setSelectedCategory}) => {
   return (
     <>
-      <Stack direction={'row'} sx={{ overflowY: "auto", height: { sx: "auto", md: '85vh' }, flexDirection: { md: 'column', xs: 'auto' },position:'relative'  }}
+      <Stack direction={'row'} sx={{ overflowY: "auto", height: { sx: "auto", md: '85vh' }, flexDirection: { md: 'column', xs: 'auto' } ,position:'sticky' }}
         >
       {categories.map((cate) => {
         return (

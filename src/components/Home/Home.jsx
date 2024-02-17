@@ -20,7 +20,7 @@ const Home = () => {
     useEffect(()=>{setVideosData([])}, [selectedCategory])
     return (
         <><Stack direction={'row'} > 
-            <Box width='20vw' sx={{display:'flex',justifyContent:'center',borderRight:'2px solid #e0e0e0'}} >
+            <Box width='20vw' sx={{display:'flex',height: { sx: "auto", md: "100%" },justifyContent:'center',borderRight:'2px solid #e0e0e0'}} >
                 <SideBar selectedCategory={selectedCategory} setSelectedCategory = {setSelectedCategory} />
             </Box>
             <Box width='100%'>
