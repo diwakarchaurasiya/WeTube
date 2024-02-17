@@ -1,18 +1,19 @@
 import React from 'react'
 import { categories } from '../../constantData'
 import {Stack,Box} from '@mui/material'
-const SideBar = () => {
+const SideBar = ({selectedCategory,setSelectedCategory}) => {
   return (
     <>
-      <Stack direction='row' sx={{ overflowY: "auto", height: { sx: "auto", md: '85vh' }, flexDirection: { md: 'column', xs: 'auto' },position:{xs:'sticky'}  }}
+      <Stack direction={'row'} sx={{ overflowY: "auto", height: { sx: "auto", md: '85vh' }, flexDirection: { md: 'column', xs: 'auto' },position:'relative'  }}
         >
-      {categories.map((cat) => {
+      {categories.map((cate) => {
         return (
           <button style={{
-            padding: '.5rem 0', display: 'flex', alignItems:'center', background: 'transparent',justifyContent:'center', border: '2px solid gray', margin: '5px', outline: 'none', borderRadius: '5px'
-          }} key={cat.name} className='category-btn'>
-            <span style={{color:'red',marginRight:'1rem',}}>{cat.icon}</span>
-            <span>{ cat.name}</span>
+            display: 'flex', alignItems: 'center',
+             background: selectedCategory === cate.name && '#FC1503', border: '1px solid white', margin: '5px', outline: 'none', borderRadius: '10px',fontSize:'1.1rem'
+          }} key={cate.name} className='category-btn' onClick={()=>{setSelectedCategory(cate.name)}}>
+            <span style={{color:cate.name===selectedCategory? "white":"#FC1503",marginRight:'1rem',}}>{cate.icon}</span>
+            <span style={{color:cate.name===selectedCategory && "white"}}>{ cate.name}</span>
           </button>
         )
       })}
