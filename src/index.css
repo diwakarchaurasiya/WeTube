@@ -19,24 +19,22 @@ a {
     height: 200px;
   }
   
-  ::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-  
   .category-btn:hover {
     border: 1px solid gray !important;
   }
   
   
   .react-player {
-    height: 77vh !important;
-    width: 100% !important;
+    height: 100% !important;
+    width: auto !important;
+    aspect-ratio: 16/9;
   }
-  
+  .inputField{
+    display:none;
+  }
   .search-bar{
     border:none;
     outline:none;
-    width:350px;
   }
   
   .category-btn{
@@ -58,13 +56,14 @@ a {
     border-radius: .5rem;
   }
   .card{
-    padding: 1rem;
+    padding: 1rem 0;
     width: 358px;
     height: 300px;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
   }
+
   .image{
     width: 358px;
     height: 200px;
@@ -103,10 +102,10 @@ a {
 
   @keyframes skeleton-animate {
     0%{
-      background-color: #ffffff6c;
+      background-color: #fefefe6c;
     }
     50%{
-      background-color: #595959b2;
+      background-color: #c9c9c9b2;
     }
     100%{
       background-color: #ffffff6c;

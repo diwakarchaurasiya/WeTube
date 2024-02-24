@@ -10,7 +10,7 @@ const PlaylistCard = ({ playInfo:{id:{playlistId},snippet} }) => {
                   <CardMedia
                       image={snippet?.thumbnails?.high?.url||demoThumbnailUrl}
                       alt={snippet?.title}
-                      sx={{ width: '100%', height:180,borderRadius:{md:'8px',sx:'0px'}}}
+                      sx={{ width: '100%', height:180,borderRadius:{md:'8px',sx:'0px'},border:'1px solid #e0e0e0'}}
                   /> 
               <CardContent 
                       sx={{ width: 'auto', height: { md: "5rem", xs: "auto" }, border: 'none', }}>

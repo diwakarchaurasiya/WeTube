@@ -18,6 +18,9 @@ dist-ssr
 .idea
 .colors
 .env
+.env.example
+.env.local
+.env.staging
 .DS_Store
 *.suo
 *.ntvs*
